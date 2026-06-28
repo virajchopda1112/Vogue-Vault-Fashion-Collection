@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VogueVault | Fashion Collection</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .hero {
+      background: linear-gradient(135deg, #000000, #F3F4F6);
+      color: #000;
+      padding: 100px 0;
+    }
+
+    .hero img {
+      border-radius: 10px;
+    }
+
+    .section-title {
+      margin-bottom: 30px;
+    }
+
+    .btn :hover {
+      color: black;
+    }
+
+    footer {
+      background: linear-gradient(90deg, #000000, #FEF4F6);
+      color: #fff;
+      padding: 30px 0;
+      text-align: center;
+    }
+
+    .card img {
+      height: 400px;
+      object-fit: cover;
+    }
+
+    .container {
+      margin-top: 30px;
+    }
+
+    /* General Section Styling */
+    .promotions {
+      background: linear-gradient(135deg, #F7E7CE, #000);
+      padding: 60px 20px;
+      text-align: center;
+      font-family: 'Helvetica Neue', sans-serif;
+    }
+
+    .promo-heading {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      font-weight: bold;
+      color: #222;
+      letter-spacing: 2px;
+    }
+
+    /* Grid Layout */
+    .promo-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    /* Promo Card Styling */
+    .promo-card {
+      background: linear-gradient(135deg, #e6e6e6, #B0C4DE);
+      color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      width: 300px;
+      padding: 30px 20px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .promo-card:hover {
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .promo-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      color: #111;
+    }
+
+    .promo-card p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    /* Button Styling */
+    .promo-card a {
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .btn-dark {
+      background: #111;
+      color: #fff;
+    }
+
+    .btn-dark:hover {
+      background: #333;
+    }
+
+    .btn-outline-dark {
+      border: 2px solid #111;
+      color: #111;
+    }
+
+    .btn-outline-dark:hover {
+      background: #111;
+      color: #fff;
+    }
+
+    /* Collections */
+    .collections {
+      padding: 60px 20px;
+      text-align: center;
+      font-family: 'Helvetica Neue', sans-serif;
+    }
+
+    .coll-heading {
+      font-size: 35PX;
+      margin-bottom: 40px;
+      font-weight: bold;
+      color: #222;
+      letter-spacing: 2px;
+      text-align: center;
+    }
+
+    .coll-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .collection-card {
+      background: linear-gradient(135deg, );
+      color: #fff;
+      border: 2px solid black;
+      border-radius: 10px;
+      width: 300px;
+      padding: 30px 20px;
+      box-shadow: 5px 5px 5px 5px grey;
+    }
+
+    .collection-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      color: #111;
+    }
+
+    .collection-card p {
+      font-size: 1rem;
+      color: #000;
+      margin-bottom: 20px;
+    }
+
+    .collection-card a {
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container-fluid {
+      background: linear-gradient(135deg, #FFF8E7, #E6D1A9);
+    }
+
+    .container {
+      font-family: 'clash Display' 'sans-serif';
+    }
+    .shadow-card{
+      box-shadow: 5px 5px 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Vogue Vault</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="product.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <button class="btn btn-dark me-2 my-2" type="submit">
+          <a href="login.html">Sign In</a>
+        </button>
+        <button class="btn btn-dark me-2 my-2" type="submit">
+          <a href="register.html">Register</a>
+        </button>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-dark" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h1 class="display-3 fw-bold">New Season Fashion</h1>
+          <p class="lead">
+            Discover the latest trends with our premium clothing collection.
+          </p>
+
+          <button class="btn btn-outline-warning p-3"><a href="product.html">Shop Now</a></button>
+
+        </div>
+
+        <div class="col-lg-6 text-center">
+          <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=700" class="img-fluid" alt="Fashion">
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Promotion And Offer -->
+  <!-- Promotions Section -->
+  <div class="promotions">
+    <h2 class="promo-heading">Exclusive Offers</h2>
+    <div class="promo-container">
+
+      <!-- Offer 1 -->
+      <div class="promo-card">
+        <h3>Summer Sale</h3>
+        <p>Up to 50% off selected styles</p><br><br>
+        <a href="#" class="btn-dark">Shop Now</a>
+      </div>
+
+      <!-- Offer 2 -->
+      <div class="promo-card">
+        <h3>Member Exclusive</h3>
+        <p>Join VogueVault Club for early access</p><br>
+        <a href="#" class="btn-outline-dark">Sign Up</a>
+      </div>
+
+      <!-- Offer 3 -->
+      <div class="promo-card">
+        <h3>Free Shipping</h3>
+        <p>On all orders above $100</p><br><br>
+        <a href="#" class="btn-dark">Learn More</a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Collections -->
+  <div class="collections">
+    <h2 class="coll-heading">Collections</h2>
+    <div class="coll-container">
+
+      <!-- Men -->
+      <div class="collection-card">
+        <h3>Men</h3>
+        <p>Premium fashion for men. </p>
+      </div>
+
+      <!-- Women -->
+      <div class="collection-card">
+        <h3>Women</h3>
+        <p>Elegant and trendy Outfits. </p>
+      </div>
+
+      <!-- Perfume -->
+      <div class="collection-card">
+        <h3>Perfume</h3>
+        <p>Attract the people.</p>
+      </div>
+
+      <!-- Gym Wear -->
+      <div class="collection-card">
+        <h3>GYM wear</h3>
+        <p>Stretchable materials for comfort during workouts.</p>
+      </div>
+
+      <!-- Children's Wear -->
+      <div class="collection-card">
+        <h3>Children's Wear</h3>
+        <p>Soft Fabrics designed for long hours of play. </p>
+      </div>
+
+      <!-- Accessories -->
+      <div class="collection-card">
+        <h3>Accessories</h3>
+        <p>Complete your Style.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Products -->
+  <div class="py-5 bg-light" id="products">
+    <div class="container">
+
+      <h2 class="text-center section-title">Featured Products</h2>
+
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-card">
+            <img
+              src="https://nobero.com/cdn/shop/files/WhatsAppImage2024-05-28at3.25.45PM_9998f9b9-0b79-4b87-817a-e11389282390.jpg?v=1770099373"
+              class="card-img-top">
+            <div class="card-body">
+              <h5>Casual T-Shirt</h5>
+              <p>₹1,999</p>
+              <button class="btn btn-outline-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-card">
+            <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=500" class="card-img-top">
+            <div class="card-body">
+              <h5>Women's Dress</h5>
+              <p>₹5,999</p>
+              <button class="btn btn-outline-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHBugHY4lGamadEhJp57wisx9PQvw9X1fYVLM3K7zJ7QiNO_uUCN6vX98f&s=10"
+              class="card-img-top">
+            <div class="card-body">
+              <h5>Nike Air Jordan 1</h5>
+              <p>₹16,999</p>
+              <button class="btn btn-outline-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- About -->
+  <div class="py-5" id="about">
+    <div class="container">
+      <h2 class="text-center section-title">About VogueVault</h2>
+
+      <p class="text-center">
+        VogueVault is a contemporary fashion brand offering premium clothing,
+        accessories and seasonal collections. Our goal is to provide stylish,
+        comfortable and affordable fashion for everyone.
+      </p>
+
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="py-5 bg-light" id="contact">
+    <div class="container">
+
+      <h2 class="text-center section-title">Contact Us</h2>
+
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+
+          <form>
+
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Full Name">
+            </div>
+
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Email">
+            </div>
+
+            <div class="mb-3">
+              <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+            </div>
+
+            <button class="btn btn-dark">Send Message</button>
+
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <p class="mb-0">© 2026 VogueVault. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

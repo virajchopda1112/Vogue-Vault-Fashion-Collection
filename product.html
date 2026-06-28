@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VogueVault | Fashion Collection</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .hero {
+      background: #111;
+      color: #fff;
+      padding: 100px 0;
+    }
+
+    .hero img {
+      border-radius: 10px;
+    }
+
+    .btn :hover {
+      color: black;
+    }
+
+    .section-title {
+      margin-bottom: 30px;
+    }
+
+    footer {
+      background: linear-gradient(90deg, #000000, #FEF4F6);
+      color: #fff;
+      padding: 30px 0;
+      text-align: center;
+    }
+
+    .card img {
+      height: 400px;
+      object-fit: cover;
+    }
+    .shadow-card{
+      box-shadow: 5px 5px 5px;
+    }
+    .container-fluid{
+       background: linear-gradient(135deg, #FFF8E7, #E6D1A9);
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Vogue Vault</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="product.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <button class="btn btn-dark me-2 my-2" type="submit">
+          <a href="login.html">Sign In</a>
+        </button>
+        <button class="btn btn-dark me-2 my-2" type="submit">
+          <a href="register.html">Register</a>
+        </button>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-dark" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Categories Dropdown -->
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <label for="categorySelect" class="font-weight-bold">Browse by Category:</label>
+        <select id="categorySelect" class="form-control w-50 mx-auto">
+          <option selected disabled>Choose Category</option>
+          <option value="men">Men</option>
+          <option value="women">Women</option>
+          <option value="accessories">Accessories</option>
+          <option value="shoes">Shoes</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <!-- Products -->
+  <div class="py-5 bg-light" id="products">
+    <div class="container">
+
+      <h2 class="text-center section-title">Featured Products</h2>
+
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-card">
+            <img
+              src="https://nobero.com/cdn/shop/files/WhatsAppImage2024-05-28at3.25.45PM_9998f9b9-0b79-4b87-817a-e11389282390.jpg?v=1770099373"
+              class="card-img-top">
+            <div class="card-body">
+              <h5>Casual T-Shirt</h5>
+              <p>₹1,999</p>
+              <button class="btn btn-outline-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-card">
+            <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=500" class="card-img-top">
+            <div class="card-body">
+              <h5>Women's Dress</h5>
+              <p>₹5,999</p>
+              <button class="btn btn-outline-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHBugHY4lGamadEhJp57wisx9PQvw9X1fYVLM3K7zJ7QiNO_uUCN6vX98f&s=10"
+              class="card-img-top">
+            <div class="card-body">
+              <h5>Nike Air Jordan 1</h5>
+              <p>₹16,999</p>
+              <button class="btn btn-outline-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-card">
+            <img src="https://m.media-amazon.com/images/I/81lv6PMukFL._AC_UY1100_.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5>Kid's Wear</h5>
+              <p>₹3,999</p>
+              <button class="btn btn-outline-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-card">
+            <img src="https://img4.dhresource.com/webp/m/0x0/f3/albu/ys/s/08/c648e35d-0548-4baf-bb6f-71d0e97c0314.jpg"
+              class="card-img-top">
+            <div class="card-body">
+              <h5>Ladies Handbag</h5>
+              <p>₹3,999</p>
+              <button class="btn btn-outline-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-card">
+            <img src="https://assets.ajio.com/medias/sys_master/root/20240607/ignh/6663373805ac7d77bbac3d3e/-473Wx593H-700055276-navy-MODEL.jpg"
+              class="card-img-top">
+            <div class="card-body">
+              <h5>Jackets</h5>
+              <p>₹4,999</p>
+              <button class="btn btn-outline-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-card">
+            <img src="https://www.ijewels.co.in/cdn/shop/files/AD0014Min.jpg?v=1735379461&width=2048"
+              class="card-img-top">
+            <div class="card-body">
+              <h5>Jewellery</h5>
+              <p>₹19,999</p>
+              <button class="btn btn-outline-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-card">
+            <img src="https://tiimg.tistatic.com/fp/1/007/434/cosmetics-products-774.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5>Cosmetics</h5>
+              <p>₹1,999</p>
+              <button class="btn btn-outline-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-card">
+            <img
+              src="https://gogirgit.com/cdn/shop/products/personalised-black-women-s-round-neck-tshirt-gogirgit_1440x.jpg?v=1651653391"
+              class="card-img-top">
+            <div class="card-body">
+              <h5>Designable Cloth</h5>
+              <p>₹6,999</p>
+              <button class="btn btn-outline-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-card">
+            <img
+              src="https://solsistersport.com/cdn/shop/articles/Athleisure_for_Older_Women_1.png?v=1744931501&width=2048"
+              class="card-img-top">
+            <div class="card-body">
+              <h5>Athelete Wear</h5>
+              <p>₹6,999</p>
+              <button class="btn btn-outline-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdYLSbnvVHftAss80QJfHnWofUSzm914Ty2Yo1DYilmYHoKsenZ8OWLoWy&s=10"
+              class="card-img-top">
+            <div class="card-body">
+              <h5>Vinatge Wear</h5>
+              <p>₹10,999</p>
+              <button class="btn btn-outline-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-card">
+            <img src="https://5.imimg.com/data5/JO/SW/MY-16758801/fancy-long-skirt.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5>Fancy Women Skirt</h5>
+              <p>₹7,999</p>
+              <button class="btn btn-outline-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-card">
+            <img
+              src="https://neemans.com/cdn/shop/articles/Neemans-ChangetheNorm-Merino-Shoes-Web-Banner-Mobile-SandBrown-Wool_f7247b33-9aba-4218-a327-ae0b16cd4abe_1024x.jpg?v=1757996782"
+              class="card-img-top">
+            <div class="card-body">
+              <h5>Eco-friendly Shoes</h5>
+              <p>₹9,999</p>
+              <button class="btn btn-outline-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-card">
+            <img
+              src="https://optorium.in/cdn/shop/files/Gucci_Sunglass_GG1897SK_001_image_1_d44d052d-d5c5-417e-92b4-f05623d89d0a.jpg?v=1752755623&width=2048"
+              class="card-img-top">
+            <div class="card-body">
+              <h5>Gucci Sunglass</h5>
+              <p>₹30,999</p>
+              <button class="btn btn-outline-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-card">
+            <img
+              src="https://www.buyon.in/wp-content/uploads/2025/01/buy-luxurious-rolex-watch-for-men-ct605-600x600.webp"
+              class="card-img-top">
+            <div class="card-body">
+              <h5>Luxury Watch Men</h5>
+              <p>₹50,000</p>
+              <button class="btn btn-outline-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-card">
+            <img src="https://m.media-amazon.com/images/I/71LNgKwJyvL._AC_UY1000_.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5>Luxury Watch Women</h5>
+              <p>₹29,000</p>
+              <button class="btn btn-outline-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-card">
+            <img
+              src="https://media.istockphoto.com/id/522628236/photo/little-girl-sneakers-shoes.jpg?s=612x612&w=0&k=20&c=JT7FEcRZNzOaAwDoFldcp5iymPU8hJ8Yt-WFvKZpcvw="
+              class="card-img-top">
+            <div class="card-body">
+              <h5>Kid's Shoes</h5>
+              <p>₹5,999</p>
+              <button class="btn btn-outline-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-card">
+            <img src="https://imagescdn.peterengland.com/img/app/product/3/39691909-14204120.jpg?auto=format&w=390"
+              class="card-img-top">
+            <div class="card-body">
+              <h5>Belts</h5>
+              <p>₹999</p>
+              <button class="btn btn-outline-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-card">
+            <img
+              src="https://cdn.shopify.com/s/files/1/1468/3848/files/Lead_Image_d65c2c5a-1ff8-4019-9d31-e9d744ee1be5.png?v=1768303366"
+              class="card-img-top">
+            <div class="card-body">
+              <h5>GYM Suit</h5>
+              <p>₹3,999</p>
+              <button class="btn btn-outline-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-v8wZwsrq7ItZbasVpTSeMZP3UNfVoJj-hrxxWciQ4FIgXFSnelSN0dhX&s=10"
+              class="card-img-top">
+            <div class="card-body">
+              <h5>Traditional Cloth</h5>
+              <p>₹22,999</p>
+              <button class="btn btn-outline-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-card">
+            <img src="https://m.media-amazon.com/images/I/6131vLobSEL._AC_UY1000_.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5>Cross-Body Bag Men</h5>
+              <p>₹5,999</p>
+              <button class="btn btn-outline-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-card">
+            <img src="https://m.media-amazon.com/images/I/61n98VIeIRL._AC_UY1000_.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5>Cross-Body Bag Women</h5>
+              <p>₹7,999</p>
+              <button class="btn btn-outline-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-card">
+            <img
+              src="https://i0.wp.com/textilelearner.net/wp-content/uploads/2023/06/Womens-Wraparounds.jpg?resize=400%2C533&ssl=1"
+              class="card-img-top">
+            <div class="card-body">
+              <h5>Beach Wear</h5>
+              <p>₹2,999</p>
+              <button class="btn btn-outline-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-card">
+            <img
+              src="https://bisarga.com/wp-content/uploads/2021/06/0blazer1210color6_5_cf972029-6890-46ae-89fa-3799ba42e20d_1800x1800.jpg"
+              class="card-img-top">
+            <div class="card-body">
+              <h5>Blazzer</h5>
+              <p>₹7,999</p>
+              <button class="btn btn-outline-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-card">
+            <img
+              src="https://www.urbanofashion.com/cdn/shop/files/jakt-denimvint-dblue_ea174286-d9fa-4e9f-9835-8f1a49b5ac28.jpg?v=1758282519"
+              class="card-img-top">
+            <div class="card-body">
+              <h5>Denim Jackets</h5>
+              <p>₹8,999</p>
+              <button class="btn btn-outline-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-card">
+            <img
+              src="https://www.elahe.in/cdn/shop/files/27_1a40f788-17e4-4e5a-94f3-2568df85de8f_2048x.jpg?v=1736502299"
+              class="card-img-top">
+            <div class="card-body">
+              <h5>Cock-Tail Wear</h5>
+              <p>₹10,999</p>
+              <button class="btn btn-outline-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ0CeMZRaKKB5n8GS7xl8LXwowS-iCwpTwSIQvd7VY46njtGV9r2wLAgs&s=10"
+              class="card-img-top">
+            <div class="card-body">
+              <h5>Travel-Life Style Wear</h5>
+              <p>₹7,999</p>
+              <button class="btn btn-outline-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-card">
+            <img src="https://i.pinimg.com/736x/6b/0b/69/6b0b69900647173f0d2c25a3cd45cf68.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5>Summer Holiday Wear</h5>
+              <p>₹12,999</p>
+              <button class="btn btn-outline-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuzNFPuzr-WlrQYZdXKHKmgNK2K4YAEkh7_ww-9LF-Vstvgd_qCxos4kI&s=10"
+              class="card-img-top">
+            <div class="card-body">
+              <h5>Perfume</h5>
+              <p>₹4,999</p>
+              <button class="btn btn-outline-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- About -->
+  <div class="py-5" id="about">
+    <div class="container">
+      <h2 class="text-center section-title">About VogueVault</h2>
+
+      <p class="text-center">
+        VogueVault is a contemporary fashion brand offering premium clothing,
+        accessories and seasonal collections. Our goal is to provide stylish,
+        comfortable and affordable fashion for everyone.
+      </p>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <p class="mb-0">© 2026 VogueVault. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
